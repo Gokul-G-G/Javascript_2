@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String</title>
+    <!-- Internal Style -->
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(208, 242, 255);
+      }
+      #para {
+        font-size: 2.5rem;
+        color: rgb(1, 130, 1);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Paragraph for output -->
+    <p id="para"></p>
+    <!-- Internal Script -->
+    <script>
+      // Function definition using Arrow Function
+      const string = (str) => {
+        let result = "";
+        for (let i = 0; i < str.length; i++) {
+          result += i + str[i];
+        }
+        document.getElementById("para").innerHTML = result.toUpperCase(); //output change to uppercase
+      };
+
+      // Function call
+      string(prompt("Enter a String"));
+    </script>
+  </body>
+</html>
