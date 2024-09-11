@@ -26,7 +26,7 @@
     <p id="para"></p>
     <!-- Internal Script -->
     <script>
-      // Function definition using Arrow Function
+      // Function definition using Arrow Function with a parameter
       const string = (str) => {
         let result = "";
         for (let i = 0; i < str.length; i++) {
@@ -35,7 +35,7 @@
         document.getElementById("para").innerHTML = result.toUpperCase(); //output change to uppercase
       };
 
-      // Function call
+      // Function call with an argument value from user 
       string(prompt("Enter a String"));
     </script>
   </body>
